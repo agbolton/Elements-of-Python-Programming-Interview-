@@ -5,8 +5,8 @@ def parity(x: int) -> int:
     # TODO - you fill in here.
     result = 0
     while x:
-        result ^= x & 1 # XOR with 1 
-        x >>= 1 #left bit shift 
+        result ^= 1 # adding 1 each loop
+        x &= x - 1
     return result
 
 
