@@ -6,7 +6,7 @@ def parity(x: int) -> int:
     result = 0
     while x:
         result ^= 1 # adding 1 each loop
-        x &= x - 1
+        x &= x - 1 # Bit mask that erased lowest sig bit
     return result
 
 
