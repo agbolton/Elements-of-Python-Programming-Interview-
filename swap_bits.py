@@ -1,7 +1,7 @@
 from test_framework import generic_test
 
 
-def swap_bits(x, i, j)
+def swap_bits(x, i, j):
     # Check if Bits at i and J are different and needed to be switched
     if (x >> i) & 1 != (x >> j) & 1:
         bit_mask = (1 << i) | (1 << j)  # Bit Mask - to Help Swap Creates a number with 1 in the swap position
